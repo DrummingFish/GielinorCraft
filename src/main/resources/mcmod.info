@@ -1,0 +1,21 @@
+[
+{
+  "modid": "GielinorCraft",
+  "name": "GielinorCraft",
+  "description": "",
+  "version": "0.1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "DrummingFish", "Master_Seth"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
