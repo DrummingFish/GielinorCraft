@@ -1,5 +1,7 @@
 package com.drummingfish.gielinorcraft.item;
 
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemTool;
 import net.minecraftforge.common.util.EnumHelper;
@@ -111,11 +113,26 @@ public class ItemsGC {
     static ItemArmor.ArmorMaterial armourSEASINGER = EnumHelper.addArmorMaterial("SEASINGER", 25, new int[]{3, 7, 5, 3}, 12);
     static ItemArmor.ArmorMaterial armourTECTONIC = EnumHelper.addArmorMaterial("TECTONIC", 25, new int[]{3, 7, 5, 3}, 12);
 
-
-
     static ItemTool.ToolMaterial toolPERMAICE = EnumHelper.addToolMaterial("PERMAICE", 2, 500, 7F, 3, 9);
 
+    public static Item bronzeFullHelm;
+    public static Item bronzeChestplate;
+    public static Item bronzeLeggings;
+    public static Item bronzeSkirt;
+    public static Item bronzeBoots;
+
     public static void init() {
+        bronzeFullHelm = new ItemArmors(armourBRONZE, 5, 0).setUnlocalizedName(ItemInfo.BRONZE_FULL_HELM_UNLOCALIZED_NAME);
+        bronzeChestplate = new ItemArmors(armourBRONZE, 5, 1).setUnlocalizedName(ItemInfo.BRONZE_BODY_UNLOCALIZED_NAME);
+        bronzeLeggings = new ItemArmors(armourBRONZE, 5, 2).setUnlocalizedName(ItemInfo.BRONZE_LEGS_UNLOCALIZED_NAME);
+        bronzeSkirt = new ItemArmors(armourBRONZE, 5, 2).setUnlocalizedName(ItemInfo.BRONZE_SKIRT_UNLOCALIZED_NAME);
+        bronzeBoots = new ItemArmors(armourBRONZE, 5, 3).setUnlocalizedName(ItemInfo.BRONZE_BOOTS_UNLOCALIZED_NAME);
+
+        GameRegistry.registerItem(bronzeFullHelm, ItemInfo.BRONZE_FULL_HELM_KEY);
+        GameRegistry.registerItem(bronzeChestplate, ItemInfo.BRONZE_BODY_KEY);
+        GameRegistry.registerItem(bronzeLeggings, ItemInfo.BRONZE_LEGS_KEY);
+        GameRegistry.registerItem(bronzeSkirt, ItemInfo.BRONZE_SKIRT_KEY);
+        GameRegistry.registerItem(bronzeBoots, ItemInfo.BRONZE_BOOTS_KEY);
     }
 	
 	public static void oreRegistration() {

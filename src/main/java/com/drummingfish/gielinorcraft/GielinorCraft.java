@@ -1,6 +1,7 @@
 package com.drummingfish.gielinorcraft;
 
 import com.drummingfish.gielinorcraft.config.ConfigHandler;
+import com.drummingfish.gielinorcraft.item.ItemsGC;
 import com.drummingfish.gielinorcraft.proxy.ClientProxy;
 import com.drummingfish.gielinorcraft.utilities.LogHelper;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -24,6 +25,8 @@ public class GielinorCraft {
     public void preInit(FMLPreInitializationEvent event) {
         ConfigHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigHandler());
+
+        ItemsGC.init();
 
         proxy.initArmourRenderer("BRONZE");
         proxy.initArmourRenderer("IRON");
