@@ -5,6 +5,9 @@ public class CommonProxy {
 	public void initSounds() {
 	}
 
+    public void initArmourRenderer(String type) {
+    }
+
     public void initRenderers() {
     }
 

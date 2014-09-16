@@ -49,7 +49,7 @@ public class ItemsGC {
     static ItemArmor.ArmorMaterial armourCARAPACE = EnumHelper.addArmorMaterial("CARAPACE", 25, new int[]{3, 7, 5, 3}, 12);
     static ItemArmor.ArmorMaterial armourSNAKESKIN = EnumHelper.addArmorMaterial("SNAKESKIN", 25, new int[]{3, 7, 5, 3}, 12);
     static ItemArmor.ArmorMaterial armourGREENDRAGONHIDE = EnumHelper.addArmorMaterial("GREENDRAGONHIDE", 25, new int[]{3, 7, 5, 3}, 12);
-    static ItemArmor.ArmorMaterial armourVOIDKNIGHTRANGED = EnumHelper.addArmorMaterial("VOIDKNIGHT", 25, new int[]{3, 7, 5, 3}, 12);
+    static ItemArmor.ArmorMaterial armourVOIDKNIGHTRANGED = EnumHelper.addArmorMaterial("VOIDKNIGHTRANGED", 25, new int[]{3, 7, 5, 3}, 12);
     static ItemArmor.ArmorMaterial armourSPINED = EnumHelper.addArmorMaterial("SPINED", 25, new int[]{3, 7, 5, 3}, 12);
     static ItemArmor.ArmorMaterial armourSACREDCLAYRANGED = EnumHelper.addArmorMaterial("SACREDCLAYRANGED", 25, new int[]{3, 7, 5, 3}, 12);
     static ItemArmor.ArmorMaterial armourBLUEDRAGONHIDE = EnumHelper.addArmorMaterial("BLUEDRAGONHIDE", 25, new int[]{3, 7, 5, 3}, 12);
