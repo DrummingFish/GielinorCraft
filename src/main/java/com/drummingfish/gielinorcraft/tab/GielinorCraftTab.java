@@ -1,0 +1,16 @@
+package com.drummingfish.gielinorcraft.tab;
+
+import com.drummingfish.gielinorcraft.ModInfo;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class GielinorCraftTab {
+
+    public static final CreativeTabs GIELINORCRAFT_TAB = new CreativeTabs(ModInfo.ID.toLowerCase()) {
+
+        @Override
+        public Item getTabIconItem() {
+            return null;
+        }
+    };
+}
