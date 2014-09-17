@@ -1,5 +1,6 @@
 package com.drummingfish.gielinorcraft;
 
+import com.drummingfish.gielinorcraft.block.BlocksGC;
 import com.drummingfish.gielinorcraft.config.ConfigHandler;
 import com.drummingfish.gielinorcraft.item.ItemsGC;
 import com.drummingfish.gielinorcraft.proxy.ClientProxy;
@@ -27,6 +28,7 @@ public class GielinorCraft {
         FMLCommonHandler.instance().bus().register(new ConfigHandler());
 
         ItemsGC.init();
+        BlocksGC.init();
 
         proxy.initArmourRenderer("BRONZE");
         proxy.initArmourRenderer("IRON");

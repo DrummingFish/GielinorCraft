@@ -23,4 +23,8 @@ public class ItemInfo {
     public static final String BRONZE_BOOTS_KEY = "bronzeBoots";
     public static final String BRONZE_BOOTS_UNLOCALIZED_NAME = "bronzeBoots";
     public static final String BRONZE_BOOTS_ICON = "bronze_boots";
+
+    public static final String ORE_COPPER_KEY = "oreCopperItem";
+    public static final String ORE_COPPER_UNLOCALIZED_NAME = "oreCopperItem";
+    public static final String ORE_COPPER_ICON = "ore_copper_item";
 }
