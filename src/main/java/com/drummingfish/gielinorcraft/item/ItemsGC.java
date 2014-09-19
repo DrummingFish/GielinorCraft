@@ -132,6 +132,7 @@ public class ItemsGC {
     public static Item oreRunite;
     public static Item oreBane;
 
+    public static Item adventurersLog;
 
     public static void init() {
         bronzeFullHelm = new ItemArmors(armourBRONZE, 5, 0).setUnlocalizedName(ItemInfo.BRONZE_FULL_HELM_UNLOCALIZED_NAME);
@@ -151,6 +152,8 @@ public class ItemsGC {
         oreRunite = new ItemBasic().setUnlocalizedName(ItemInfo.ORE_RUNITE_UNLOCALIZED_NAME);
         oreBane = new ItemBasic().setUnlocalizedName(ItemInfo.ORE_BANE_UNLOCALIZED_NAME);
 
+        adventurersLog = new ItemAdventurersLog();
+
         GameRegistry.registerItem(bronzeFullHelm, ItemInfo.BRONZE_FULL_HELM_KEY);
         GameRegistry.registerItem(bronzeChestplate, ItemInfo.BRONZE_BODY_KEY);
         GameRegistry.registerItem(bronzeLeggings, ItemInfo.BRONZE_LEGS_KEY);
@@ -167,6 +170,8 @@ public class ItemsGC {
         GameRegistry.registerItem(oreAdamantite, ItemInfo.ORE_ADAMANTITE_KEY);
         GameRegistry.registerItem(oreRunite, ItemInfo.ORE_RUNITE_KEY);
         GameRegistry.registerItem(oreBane, ItemInfo.ORE_BANE_KEY);
+
+        GameRegistry.registerItem(adventurersLog, ItemInfo.ADVENTURERS_LOG_KEY);
     }
 	
 	public static void oreRegistration() {

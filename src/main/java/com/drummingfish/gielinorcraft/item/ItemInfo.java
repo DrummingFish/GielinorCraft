@@ -63,4 +63,8 @@ public class ItemInfo {
     public static final String ORE_BANE_KEY = "oreBaneItem";
     public static final String ORE_BANE_UNLOCALIZED_NAME = "oreBaneItem";
     public static final String ORE_BANE_ICON = "ore_bane_item";
+
+    public static final String ADVENTURERS_LOG_KEY = "adventurersLog";
+    public static final String ADVENTURERS_LOG_UNLOCALIZED_NAME = "adventurersLog";
+    public static final String ADVENTURERS_ICON = "adventurers_log";
 }

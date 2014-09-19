@@ -2,6 +2,7 @@ package com.drummingfish.gielinorcraft;
 
 import com.drummingfish.gielinorcraft.block.BlocksGC;
 import com.drummingfish.gielinorcraft.config.ConfigHandler;
+import com.drummingfish.gielinorcraft.gui.GuiHandler;
 import com.drummingfish.gielinorcraft.item.ItemsGC;
 import com.drummingfish.gielinorcraft.proxy.ClientProxy;
 import com.drummingfish.gielinorcraft.utilities.LogHelper;
@@ -11,6 +12,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 
 @Mod(modid = ModInfo.ID, name = ModInfo.NAME, version = ModInfo.VERSION)
 
@@ -29,6 +31,8 @@ public class GielinorCraft {
 
         ItemsGC.init();
         BlocksGC.init();
+
+        NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
 
         proxy.initArmourRenderer("BRONZE");
         proxy.initArmourRenderer("IRON");
