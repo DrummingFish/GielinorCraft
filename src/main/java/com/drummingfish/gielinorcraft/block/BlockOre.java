@@ -23,7 +23,34 @@ public class BlockOre extends Block {
         if (type == "copper") {
             setBlockName(BlockInfo.ORE_COPPER_UNLOCALIZED_NAME);
             setHardness(4.0F);
-        }  else if (type == "base") {
+        } else if (type == "tin") {
+            setBlockName(BlockInfo.ORE_TIN_UNLOCALIZED_NAME);
+            setHardness(4.0F);
+        } else if (type == "iron") {
+            setBlockName(BlockInfo.ORE_IRON_UNLOCALIZED_NAME);
+            setHardness(4.0F);
+        }else if (type == "silver") {
+            setBlockName(BlockInfo.ORE_SILVER_UNLOCALIZED_NAME);
+            setHardness(4.0F);
+        }else if (type == "coal") {
+            setBlockName(BlockInfo.ORE_COAL_UNLOCALIZED_NAME);
+            setHardness(4.0F);
+        }else if (type == "gold") {
+            setBlockName(BlockInfo.ORE_GOLD_UNLOCALIZED_NAME);
+            setHardness(4.0F);
+        }else if (type == "mithril") {
+            setBlockName(BlockInfo.ORE_MITHRIL_UNLOCALIZED_NAME);
+            setHardness(4.0F);
+        }else if (type == "adamantite") {
+            setBlockName(BlockInfo.ORE_ADAMANTITE_UNLOCALIZED_NAME);
+            setHardness(4.0F);
+        }else if (type == "runite") {
+            setBlockName(BlockInfo.ORE_RUNITE_UNLOCALIZED_NAME);
+            setHardness(4.0F);
+        }else if (type == "bane") {
+            setBlockName(BlockInfo.ORE_BANE_UNLOCALIZED_NAME);
+            setHardness(4.0F);
+        } else if (type == "base") {
             setBlockUnbreakable();
             setBlockName(BlockInfo.ORE_BASE_UNLOCALIZED_NAME);
             setTickRandomly(true);
@@ -67,7 +94,27 @@ public class BlockOre extends Block {
 
     @Override
     public Item getItemDropped(int par1, Random par2Random, int par3) {
-        return ItemsGC.oreCopper;
+        if (this == BlocksGC.oreCopper) {
+            return ItemsGC.oreCopper;
+        } else if (this == BlocksGC.oreTin) {
+            return ItemsGC.oreTin;
+        } else if (this == BlocksGC.oreIron) {
+            return ItemsGC.oreIron;
+        } else if (this == BlocksGC.oreSilver) {
+            return ItemsGC.oreSilver;
+        } else if (this == BlocksGC.oreCoal) {
+            return ItemsGC.oreCoal;
+        } else if (this == BlocksGC.oreGold) {
+            return ItemsGC.oreGold;
+        } else if (this == BlocksGC.oreMithril) {
+            return ItemsGC.oreMithril;
+        } else if (this == BlocksGC.oreAdamantite) {
+            return ItemsGC.oreAdamantite;
+        } else if (this == BlocksGC.oreRunite) {
+            return ItemsGC.oreRunite;
+        } else {
+            return ItemsGC.oreBane;
+        }
     }
 
     @Override

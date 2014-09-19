@@ -122,6 +122,16 @@ public class ItemsGC {
     public static Item bronzeBoots;
 
     public static Item oreCopper;
+    public static Item oreTin;
+    public static Item oreIron;
+    public static Item oreSilver;
+    public static Item oreCoal;
+    public static Item oreGold;
+    public static Item oreMithril;
+    public static Item oreAdamantite;
+    public static Item oreRunite;
+    public static Item oreBane;
+
 
     public static void init() {
         bronzeFullHelm = new ItemArmors(armourBRONZE, 5, 0).setUnlocalizedName(ItemInfo.BRONZE_FULL_HELM_UNLOCALIZED_NAME);
@@ -131,6 +141,15 @@ public class ItemsGC {
         bronzeBoots = new ItemArmors(armourBRONZE, 5, 3).setUnlocalizedName(ItemInfo.BRONZE_BOOTS_UNLOCALIZED_NAME);
 
         oreCopper = new ItemBasic().setUnlocalizedName(ItemInfo.ORE_COPPER_UNLOCALIZED_NAME);
+        oreTin = new ItemBasic().setUnlocalizedName(ItemInfo.ORE_TIN_UNLOCALIZED_NAME);
+        oreIron = new ItemBasic().setUnlocalizedName(ItemInfo.ORE_IRON_UNLOCALIZED_NAME);
+        oreSilver = new ItemBasic().setUnlocalizedName(ItemInfo.ORE_SILVER_UNLOCALIZED_NAME);
+        oreCoal = new ItemBasic().setUnlocalizedName(ItemInfo.ORE_COAL_UNLOCALIZED_NAME);
+        oreGold = new ItemBasic().setUnlocalizedName(ItemInfo.ORE_GOLD_UNLOCALIZED_NAME);
+        oreMithril = new ItemBasic().setUnlocalizedName(ItemInfo.ORE_MITHRIL_UNLOCALIZED_NAME);
+        oreAdamantite = new ItemBasic().setUnlocalizedName(ItemInfo.ORE_ADAMANTITE_UNLOCALIZED_NAME);
+        oreRunite = new ItemBasic().setUnlocalizedName(ItemInfo.ORE_RUNITE_UNLOCALIZED_NAME);
+        oreBane = new ItemBasic().setUnlocalizedName(ItemInfo.ORE_BANE_UNLOCALIZED_NAME);
 
         GameRegistry.registerItem(bronzeFullHelm, ItemInfo.BRONZE_FULL_HELM_KEY);
         GameRegistry.registerItem(bronzeChestplate, ItemInfo.BRONZE_BODY_KEY);
@@ -139,6 +158,15 @@ public class ItemsGC {
         GameRegistry.registerItem(bronzeBoots, ItemInfo.BRONZE_BOOTS_KEY);
 
         GameRegistry.registerItem(oreCopper, ItemInfo.ORE_COPPER_KEY);
+        GameRegistry.registerItem(oreTin, ItemInfo.ORE_TIN_KEY);
+        GameRegistry.registerItem(oreIron, ItemInfo.ORE_IRON_KEY);
+        GameRegistry.registerItem(oreSilver, ItemInfo.ORE_SILVER_KEY);
+        GameRegistry.registerItem(oreCoal, ItemInfo.ORE_COAL_KEY);
+        GameRegistry.registerItem(oreGold, ItemInfo.ORE_GOLD_KEY);
+        GameRegistry.registerItem(oreMithril, ItemInfo.ORE_MITHRIL_KEY);
+        GameRegistry.registerItem(oreAdamantite, ItemInfo.ORE_ADAMANTITE_KEY);
+        GameRegistry.registerItem(oreRunite, ItemInfo.ORE_RUNITE_KEY);
+        GameRegistry.registerItem(oreBane, ItemInfo.ORE_BANE_KEY);
     }
 	
 	public static void oreRegistration() {
