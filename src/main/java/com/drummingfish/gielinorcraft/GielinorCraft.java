@@ -6,6 +6,7 @@ import com.drummingfish.gielinorcraft.gui.GuiHandler;
 import com.drummingfish.gielinorcraft.item.ItemsGC;
 import com.drummingfish.gielinorcraft.proxy.ClientProxy;
 import com.drummingfish.gielinorcraft.utilities.LogHelper;
+import com.drummingfish.gielinorcraft.world.WorldProviderGielinor;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -13,6 +14,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
+import net.minecraftforge.common.DimensionManager;
 
 @Mod(modid = ModInfo.ID, name = ModInfo.NAME, version = ModInfo.VERSION)
 
@@ -23,6 +25,8 @@ public class GielinorCraft {
 
     @SidedProxy(clientSide = "com.drummingfish.gielinorcraft.proxy.ClientProxy", serverSide = "com.drummingfish.gielinorcraft.proxy.CommonProxy")
     public static ClientProxy proxy;
+
+    public static int dimensionId = 8;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -128,6 +132,9 @@ public class GielinorCraft {
 
     @Mod.EventHandler
     public void load(FMLInitializationEvent event) {
+        //DimensionManager.registerProviderType(dimensionId, WorldProviderGielinor.class, false);
+        //DimensionManager.registerDimension(dimensionId, dimensionId);
+
         LogHelper.info("Initialization Complete!");
     }
 
