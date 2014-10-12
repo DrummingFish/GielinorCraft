@@ -113,7 +113,7 @@ public class ItemsGC {
     static ItemArmor.ArmorMaterial armourSEASINGER = EnumHelper.addArmorMaterial("SEASINGER", 25, new int[]{3, 7, 5, 3}, 12);
     static ItemArmor.ArmorMaterial armourTECTONIC = EnumHelper.addArmorMaterial("TECTONIC", 25, new int[]{3, 7, 5, 3}, 12);
 
-    static ItemTool.ToolMaterial toolPERMAICE = EnumHelper.addToolMaterial("PERMAICE", 2, 500, 7F, 3, 9);
+    static ItemTool.ToolMaterial toolBRONZE = EnumHelper.addToolMaterial("BRONZE", 2, 500, 7F, 3, 9);
 
     public static Item bronzeFullHelm;
     public static Item bronzeChestplate;
@@ -133,9 +133,22 @@ public class ItemsGC {
     public static Item steelSkirt;
     public static Item steelBoots;
 
+    public static Item initiateHelm;
+    public static Item initiateChestplate;
+    public static Item initiateLeggingsM;
+    public static Item initiateLeggingsF;
 
+    public static Item blackFullHelm;
+    public static Item blackChestplate;
+    public static Item blackLeggings;
+    public static Item blackSkirt;
+    public static Item blackBoots;
 
-
+    public static Item whiteFullHelm;
+    public static Item whiteChestplate;
+    public static Item whiteLeggings;
+    public static Item whiteSkirt;
+    public static Item whiteBoots;
 
     public static Item mithrilFullHelm;
     public static Item mithrilChestplate;
@@ -143,9 +156,14 @@ public class ItemsGC {
     public static Item mithrilSkirt;
     public static Item mithrilBoots;
 
+    public static Item proselyteHelm;
+    public static Item proselyteChestplate;
+    public static Item proselyteLeggingsM;
+    public static Item proselyteLeggingsF;
 
-
-
+    public static Item eliteBlackHelm;
+    public static Item eliteBlackChestplate;
+    public static Item eliteBlackLeggings;
 
     public static Item adamantFullHelm;
     public static Item adamantChestplate;
@@ -158,6 +176,11 @@ public class ItemsGC {
     public static Item runeLeggings;
     public static Item runeSkirt;
     public static Item runeBoots;
+
+    public static Item dragonstoneHelm;
+    public static Item dragonstoneChestplate;
+    public static Item dragonstoneLeggings;
+    public static Item dragonstoneBoots;
 
     public static Item oreCopper;
     public static Item oreTin;
@@ -173,7 +196,7 @@ public class ItemsGC {
     public static Item adventurersLog;
 
     public static void init() {
-        bronzeFullHelm = new ItemArmors(armourBRONZE, 5, 0).setUnlocalizedName(ItemInfo.BRONZE_FULL_HELM_UNLOCALIZED_NAME);
+        bronzeFullHelm = new ItemArmors(armourBRONZE, 5, 0).setUnlocalizedName(ItemInfo.BRONZE_FULL_HELM_UNLOCALIZED_NAME).setTextureName("bronze_full_helm");
         bronzeChestplate = new ItemArmors(armourBRONZE, 5, 1).setUnlocalizedName(ItemInfo.BRONZE_BODY_UNLOCALIZED_NAME);
         bronzeLeggings = new ItemArmors(armourBRONZE, 5, 2).setUnlocalizedName(ItemInfo.BRONZE_LEGS_UNLOCALIZED_NAME);
         bronzeSkirt = new ItemArmors(armourBRONZE, 5, 2).setUnlocalizedName(ItemInfo.BRONZE_SKIRT_UNLOCALIZED_NAME);
@@ -191,9 +214,22 @@ public class ItemsGC {
         steelSkirt = new ItemArmors(armourSTEEL, 7, 2).setUnlocalizedName(ItemInfo.STEEL_SKIRT_UNLOCALIZED_NAME);
         steelBoots = new ItemArmors(armourSTEEL, 7, 3).setUnlocalizedName(ItemInfo.STEEL_BOOTS_UNLOCALIZED_NAME);
 
+        initiateHelm = new ItemArmors(armourINITIATE, 8, 0).setUnlocalizedName(ItemInfo.INITIATE_HELM_UNLOCALIZED_NAME);
+        initiateChestplate = new ItemArmors(armourINITIATE, 8, 1).setUnlocalizedName(ItemInfo.INITIATE_BODY_UNLOCALIZED_NAME);
+        initiateLeggingsM = new ItemArmors(armourINITIATE, 8, 2).setUnlocalizedName(ItemInfo.INITIATE_LEGS_M_UNLOCALIZED_NAME);
+        initiateLeggingsF = new ItemArmors(armourINITIATE, 8, 2).setUnlocalizedName(ItemInfo.INITIATE_LEGS_F_UNLOCALIZED_NAME);
 
+        blackFullHelm = new ItemArmors(armourBLACK, 9, 0).setUnlocalizedName(ItemInfo.BLACK_FULL_HELM_UNLOCALIZED_NAME);
+        blackChestplate = new ItemArmors(armourBLACK, 9, 1).setUnlocalizedName(ItemInfo.BLACK_BODY_UNLOCALIZED_NAME);
+        blackLeggings = new ItemArmors(armourBLACK, 9, 2).setUnlocalizedName(ItemInfo.BLACK_LEGS_UNLOCALIZED_NAME);
+        blackSkirt = new ItemArmors(armourBLACK, 9, 2).setUnlocalizedName(ItemInfo.BLACK_SKIRT_UNLOCALIZED_NAME);
+        blackBoots = new ItemArmors(armourBLACK, 9, 3).setUnlocalizedName(ItemInfo.BLACK_BOOTS_UNLOCALIZED_NAME);
 
-
+        whiteFullHelm = new ItemArmors(armourWHITE, 10, 0).setUnlocalizedName(ItemInfo.WHITE_FULL_HELM_UNLOCALIZED_NAME);
+        whiteChestplate = new ItemArmors(armourWHITE, 10, 1).setUnlocalizedName(ItemInfo.WHITE_BODY_UNLOCALIZED_NAME);
+        whiteLeggings = new ItemArmors(armourWHITE, 10, 2).setUnlocalizedName(ItemInfo.WHITE_LEGS_UNLOCALIZED_NAME);
+        whiteSkirt = new ItemArmors(armourWHITE, 10, 2).setUnlocalizedName(ItemInfo.WHITE_SKIRT_UNLOCALIZED_NAME);
+        whiteBoots = new ItemArmors(armourWHITE, 10, 3).setUnlocalizedName(ItemInfo.WHITE_BOOTS_UNLOCALIZED_NAME);
 
         mithrilFullHelm = new ItemArmors(armourMITHRIL, 11, 0).setUnlocalizedName(ItemInfo.MITHRIL_FULL_HELM_UNLOCALIZED_NAME);
         mithrilChestplate = new ItemArmors(armourMITHRIL, 11, 1).setUnlocalizedName(ItemInfo.MITHRIL_BODY_UNLOCALIZED_NAME);
@@ -201,11 +237,14 @@ public class ItemsGC {
         mithrilSkirt = new ItemArmors(armourMITHRIL, 11, 2).setUnlocalizedName(ItemInfo.MITHRIL_SKIRT_UNLOCALIZED_NAME);
         mithrilBoots = new ItemArmors(armourMITHRIL, 11, 3).setUnlocalizedName(ItemInfo.MITHRIL_BOOTS_UNLOCALIZED_NAME);
 
+        proselyteHelm = new ItemArmors(armourPROSELYTE, 12, 0).setUnlocalizedName(ItemInfo.PROSELYTE_HELM_UNLOCALIZED_NAME);
+        proselyteChestplate = new ItemArmors(armourPROSELYTE, 12, 1).setUnlocalizedName(ItemInfo.PROSELYTE_BODY_UNLOCALIZED_NAME);
+        proselyteLeggingsM = new ItemArmors(armourPROSELYTE, 12, 2).setUnlocalizedName(ItemInfo.PROSELYTE_LEGS_M_UNLOCALIZED_NAME);
+        proselyteLeggingsF = new ItemArmors(armourPROSELYTE, 12, 2).setUnlocalizedName(ItemInfo.PROSELYTE_LEGS_F_UNLOCALIZED_NAME);
 
-
-
-
-
+        eliteBlackHelm = new ItemArmors(armourELITEBLACK, 13, 0).setUnlocalizedName(ItemInfo.ELITEBLACK_HELM_UNLOCALIZED_NAME);
+        eliteBlackChestplate = new ItemArmors(armourELITEBLACK, 13, 1).setUnlocalizedName(ItemInfo.ELITEBLACK_BODY_UNLOCALIZED_NAME);
+        eliteBlackLeggings = new ItemArmors(armourELITEBLACK, 13, 2).setUnlocalizedName(ItemInfo.ELITEBLACK_LEGS_UNLOCALIZED_NAME);
 
         adamantFullHelm = new ItemArmors(armourADAMANT, 14, 0).setUnlocalizedName(ItemInfo.ADAMANT_FULL_HELM_UNLOCALIZED_NAME);
         adamantChestplate = new ItemArmors(armourADAMANT, 14, 1).setUnlocalizedName(ItemInfo.ADAMANT_BODY_UNLOCALIZED_NAME);
@@ -218,6 +257,11 @@ public class ItemsGC {
         runeLeggings = new ItemArmors(armourRUNE, 15, 2).setUnlocalizedName(ItemInfo.RUNE_LEGS_UNLOCALIZED_NAME);
         runeSkirt = new ItemArmors(armourRUNE, 15, 2).setUnlocalizedName(ItemInfo.RUNE_SKIRT_UNLOCALIZED_NAME);
         runeBoots = new ItemArmors(armourRUNE, 15, 3).setUnlocalizedName(ItemInfo.RUNE_BOOTS_UNLOCALIZED_NAME);
+
+        dragonstoneHelm = new ItemArmors(armourDRAGONSTONE, 16, 0).setUnlocalizedName(ItemInfo.DRAGONSTONE_FULL_HELM_UNLOCALIZED_NAME);
+        dragonstoneChestplate = new ItemArmors(armourDRAGONSTONE, 16, 1).setUnlocalizedName(ItemInfo.DRAGONSTONE_BODY_UNLOCALIZED_NAME);
+        dragonstoneLeggings = new ItemArmors(armourDRAGONSTONE, 16, 2).setUnlocalizedName(ItemInfo.DRAGONSTONE_LEGS_UNLOCALIZED_NAME);
+        dragonstoneBoots = new ItemArmors(armourDRAGONSTONE, 16, 3).setUnlocalizedName(ItemInfo.DRAGONSTONE_BOOTS_UNLOCALIZED_NAME);
 
         oreCopper = new ItemBasic().setUnlocalizedName(ItemInfo.ORE_COPPER_UNLOCALIZED_NAME);
         oreTin = new ItemBasic().setUnlocalizedName(ItemInfo.ORE_TIN_UNLOCALIZED_NAME);
@@ -250,11 +294,37 @@ public class ItemsGC {
         GameRegistry.registerItem(steelSkirt, ItemInfo.STEEL_SKIRT_KEY);
         GameRegistry.registerItem(steelBoots, ItemInfo.STEEL_BOOTS_KEY);
 
+        GameRegistry.registerItem(initiateHelm, ItemInfo.INITIATE_HELM_KEY);
+        GameRegistry.registerItem(initiateChestplate, ItemInfo.INITIATE_BODY_KEY);
+        GameRegistry.registerItem(initiateLeggingsM, ItemInfo.INITIATE_LEGS_M_KEY);
+        GameRegistry.registerItem(initiateLeggingsF, ItemInfo.INITIATE_LEGS_F_KEY);
+
+        GameRegistry.registerItem(blackFullHelm, ItemInfo.BLACK_FULL_HELM_KEY);
+        GameRegistry.registerItem(blackChestplate, ItemInfo.BLACK_BODY_KEY);
+        GameRegistry.registerItem(blackLeggings, ItemInfo.BLACK_LEGS_KEY);
+        GameRegistry.registerItem(blackSkirt, ItemInfo.BLACK_SKIRT_KEY);
+        GameRegistry.registerItem(blackBoots, ItemInfo.BLACK_BOOTS_KEY);
+
+        GameRegistry.registerItem(whiteFullHelm, ItemInfo.WHITE_FULL_HELM_KEY);
+        GameRegistry.registerItem(whiteChestplate, ItemInfo.WHITE_BODY_KEY);
+        GameRegistry.registerItem(whiteLeggings, ItemInfo.WHITE_LEGS_KEY);
+        GameRegistry.registerItem(whiteSkirt, ItemInfo.WHITE_SKIRT_KEY);
+        GameRegistry.registerItem(whiteBoots, ItemInfo.WHITE_BOOTS_KEY);
+
         GameRegistry.registerItem(mithrilFullHelm, ItemInfo.MITHRIL_FULL_HELM_KEY);
         GameRegistry.registerItem(mithrilChestplate, ItemInfo.MITHRIL_BODY_KEY);
         GameRegistry.registerItem(mithrilLeggings, ItemInfo.MITHRIL_LEGS_KEY);
         GameRegistry.registerItem(mithrilSkirt, ItemInfo.MITHRIL_SKIRT_KEY);
         GameRegistry.registerItem(mithrilBoots, ItemInfo.MITHRIL_BOOTS_KEY);
+
+        GameRegistry.registerItem(proselyteHelm, ItemInfo.PROSELYTE_HELM_KEY);
+        GameRegistry.registerItem(proselyteChestplate, ItemInfo.PROSELYTE_BODY_KEY);
+        GameRegistry.registerItem(proselyteLeggingsM, ItemInfo.PROSELYTE_LEGS_M_KEY);
+        GameRegistry.registerItem(proselyteLeggingsF, ItemInfo.PROSELYTE_LEGS_F_KEY);
+
+        GameRegistry.registerItem(eliteBlackHelm, ItemInfo.ELITEBLACK_HELM_KEY);
+        GameRegistry.registerItem(eliteBlackChestplate, ItemInfo.ELITEBLACK_BODY_KEY);
+        GameRegistry.registerItem(eliteBlackLeggings, ItemInfo.ELITEBLACK_LEGS_KEY);
 
         GameRegistry.registerItem(adamantFullHelm, ItemInfo.ADAMANT_FULL_HELM_KEY);
         GameRegistry.registerItem(adamantChestplate, ItemInfo.ADAMANT_BODY_KEY);
@@ -267,6 +337,11 @@ public class ItemsGC {
         GameRegistry.registerItem(runeLeggings, ItemInfo.RUNE_LEGS_KEY);
         GameRegistry.registerItem(runeSkirt, ItemInfo.RUNE_SKIRT_KEY);
         GameRegistry.registerItem(runeBoots, ItemInfo.RUNE_BOOTS_KEY);
+
+        GameRegistry.registerItem(dragonstoneHelm, ItemInfo.DRAGONSTONE_FULL_HELM_KEY);
+        GameRegistry.registerItem(dragonstoneChestplate, ItemInfo.DRAGONSTONE_BODY_KEY);
+        GameRegistry.registerItem(dragonstoneLeggings, ItemInfo.DRAGONSTONE_LEGS_KEY);
+        GameRegistry.registerItem(dragonstoneBoots, ItemInfo.DRAGONSTONE_BOOTS_KEY);
 
 
 
