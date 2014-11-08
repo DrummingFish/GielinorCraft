@@ -2,7 +2,7 @@ package com.drummingfish.gielinorcraft.item;
 
 public class ItemInfo {
 
-	public static final String TEXTURE_LOCATION = "gielinorcraft";
+	public static final String TEXTURE_LOCATION = "gielinorcraft:";
 
 	public static final String BRONZE_FULL_HELM_KEY = "bronzeFullHelm";
 	public static final String BRONZE_FULL_HELM_UNLOCALIZED_NAME = "bronzeFullHelm";
@@ -273,5 +273,5 @@ public class ItemInfo {
 
     public static final String ADVENTURERS_LOG_KEY = "adventurersLog";
     public static final String ADVENTURERS_LOG_UNLOCALIZED_NAME = "adventurersLog";
-    public static final String ADVENTURERS_ICON = "adventurers_log";
+    public static final String ADVENTURERS_LOG_ICON = "adventurers_log";
 }
